@@ -1,0 +1,38 @@
+.btn-circle.btn-lg {
+  width: 40px;
+  height: 40px;
+  padding: 5px 8px;
+  font-size: 12px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+
+.feedback{display:none;}
+body .feedback ul li{padding:0;}
+.feedback ul li::before{display:none;}
+
+.feedback textarea{height: 180px; }
+.feedback .screenshot{ position: relative; top: -24px; right: 10px; opacity: .6}
+.feedback .screenshot:hover{  opacity: 1}
+.feedback .reported p, .feedback .failed p  { height: auto; padding:20px; font-size:17px; line-height:1.4em;}
+
+
+.feedback.left{left:5px; bottom:5px}
+.feedback.right .btn.dropdown-toggle{transform: translateY(-50%); height:115px; position: fixed; border-radius: 5px 0 0 5px; z-index:50; right:0; top:50%; width:35px; padding:0;}
+.feedback.right .btn.dropdown-toggle span{transform: rotate(-90deg) translate(-50%, -50%); display:block; text-align: center; transform-origin:top left;  line-height:35px; left:50%; top:50%; position:absolute;}
+
+.feedback .dropdown-menu.dropdown-menu-form{width: 290px;height: 320px; z-index:2147483648; position:fixed; top:auto; bottom: 5px; right:5px;}
+.feedback.left .dropdown-menu{ left: 0px}
+.feedback .hideme{ display: none}
+
+.feedback h2{font-size:32px;}
+.feedback textarea.form-control{height:155px; margin-bottom:10px;}
+
+body .btn{background-color:#316EB4;}
+
+#scrollUp{z-index:5000 !important;}
+.close-x{position:absolute; top:-10px; display:none; right:10px; height:10px; width:10px; line-height:10px; text-align: center; cursor: pointer; font-size:20px;}
+
+@media (max-width:800px){
+	.close-x{display:block;}
+}

@@ -1,0 +1,102 @@
+body{
+	font-family: 'Open Sans', sans-serif !important;
+}
+/*  ----------------------   
+
+EXAM REVIEW STYLES 
+
+------------------------ */
+
+
+div#rackforms-output-div-recent, .rackforms-output-div, #rackforms-output-div-review, #rackforms-output-div-page5{
+	font-family: 'Open Sans', sans-serif !important;
+	width: 100% !important;
+	font-size: 16px;
+}
+#fb_fld-Table .body-copy{
+	width: 100% !important;
+}
+table {
+    width: 100%;
+    border-top: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    margin: 1em auto;
+    border-collapse: collapse;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th {
+    font-weight: normal;
+    border-bottom: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    padding: .3em 1em;
+    height: 38px;
+
+    background: #f2f2f2;
+    text-align: center;
+    color: #666666;
+}
+.column1 {
+    background: #f8f8f8;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr:nth-child(even) {
+    background: #f7fbff;
+}
+td {
+    border-bottom: 1px solid #e9e9e9;
+    border-left: 1px solid #e9e9e9;
+    color: #797979;
+    padding: 0.7em 0.2em;
+    text-align: center;
+}
+
+/* ------------- buttons styles -----------------*/
+.button-wrapper input{display:block; width:120px; margin:0 0px; background:#316eb4; color:#fff; border:none; line-height:35px; cursor: pointer; transition: background 0.3s; font-size:16px; -webkit-appearance:none; border-radius:7px;}
+.button-wrapper input:hover{background:#114e94;}
+
+/* Input */
+input#Username {
+    font-size: 16px;
+}
+
+.reset-button {display:block; width:80px; margin:0 0px; background:firebrick; color:#fff; border:none; line-height:30px; cursor: pointer; transition: background 0.3s; font-size:16px; -webkit-appearance:none; border-radius:7px;}
+.reset-button:hover{background:darkred;}
+
+
+/* Links */
+body .rackforms-output-div a:link, body .rackforms-output-div a:visited{color:#316EB4; transition:color 0.3s;}
+body .rackforms-output-div a:hover{text-decoration:none; color:#2B3E51;}
+
+
+/* ============================================================
+			STYLE FOR SMALLER DEVICES
+================================================== */
+
+
+
+@media screen and (max-width: 800px){
+	/*  ----------------------   EXAM REVIEW STYLES ------------------------ */
+	#bucket14 div{
+		width: 100%;
+	}
+	#bucket14 div input{
+		width: 100%;
+	}
+	body{
+		overflow-x: hidden;
+	}
+} 

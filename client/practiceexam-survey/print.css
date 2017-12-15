@@ -1,0 +1,140 @@
+/* RackForms Print CSS Version. 3.1 Build 879 */
+
+body {
+   background: white;
+   font-size: 9pt;
+   margin:5px;
+   }
+a:link, a:visited {
+   color: #520;
+   background: transparent;
+   font-weight: bold;
+   text-decoration: underline;
+   }
+#content a:link:after, #content a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 90%;
+   }
+
+/* text styles */
+.section-head { font-size:18px; font-weight:bold; }
+.confirm-text { font-size:18px; font-weight:bold; }
+.body-copy { font-size:12px; font-weight:normal; }
+.heading-main { font-size:12px; font-weight:bold; }
+.heading-sub { font-size:12px; font-weight:normal; }
+.req-star { color:#CC0000; font-weight:bold; margin-left:1px; font-size:12px; } /* 1 px less than editor to compensate for small difference */
+.helper { font-size:7pt; font-weight:normal; margin-top:2px; }
+
+.tailtext { font-size: 75%; }
+
+/* character counters */
+.count-helper { font-size:7pt; font-weight:normal; margin-top:2px; color:#888888; }
+.count-helper-bold { font-size:7pt; font-weight:bold; margin-top:2px; }
+.count-helper-error { font-size:7pt; font-weight:bold; margin-top:2px; color:#CC0000; }
+
+/* Add custom paragraph spacing here */
+p { margin-bottom:10px; margin-top: 0px; padding:0; }
+
+/* form element styles | edit :focus for custom over states */
+input 	{ 	color:#333333; }																	input:focus { }
+input.btn { color:#333333; display:none;  } /* font: normal 83% Arial, Helvetica, sans-serif; */
+select 	{ 	color:#333333; } 																	select:focus { }
+text { 		color:#333333; } 																	text:focus { }
+textarea { 					font-size:12px; color:#333333; } 
+
+
+/* main container */
+.rackforms-output-sortable { color:#222222; }
+.rackforms-output {  position:relative; color:#222222; }
+.rackforms-output-div {  position:relative; color:#222222; }
+
+.fb-sortable-clear{ }
+
+/* AJAX */
+.fb-ajax-loader { color:#dedede; }
+
+/* list item */
+li { }
+/*.rackforms-output-sortable ul { margin:10px 5px 10px 5px; padding:5px; width:96%; list-style-position:outside; } PRE-645 */ 
+.rackforms-output-sortable ul { margin:0px; padding:0px; }
+.rackforms-output-sortable li { margin-bottom:10px; padding:2px; list-style-position:outside; }
+.rackforms-output  ul { margin:10px 5px 10px 5px; padding:5px; width:96%; list-style-position:outside; } 
+.rackforms-output li { margin-bottom:5px; padding:2px; list-style-position:outside; }
+
+/* form components */
+form label { font-size:12px; font-weight:normal; text-align: left; }
+/* form span { position: relative; clear: both; float: none; } Build 615 Removed: position: relative; */ 
+form span { clear: both; float: none; }
+
+/* Handle Table Mode Spacing */
+.fb-tabelmode-clear { height: 5px; }
+
+/* datagrid */
+.datagrid th { font-size:12px; }
+.datagrid-row-label { font-size:12px; }
+
+/* error messages, display */
+li.error { background-color:#ffffdd; } div.error { background-color:#ffffdd; }
+span.errormsg { font-weight: normal; font-size: 65%; color:#cc0000; padding-left:2px; }
+/* php error element */
+.err-msg { font-size:12px; font-weight:bold; color:#CC0000; padding:5px; }
+
+/* element programmable styles */
+.fieldwidth-0 { width:auto; }
+.fieldwidth-1 { width:100px; }
+.fieldwidth-2 { width:200px; }
+.fieldwidth-3 { width:300px; }
+.fieldwidth-4 { width:400px; }
+
+/* moz link outline */
+:focus { -moz-outline-style: none; }
+
+/* Pre IE8 Print Style */
+.btn { 	margin: 0; padding: 0 .45em; width: auto; overflow: visible; }
+
+/* Dynamic Form Elements */
+.dynamic-form-elements-label {  }
+.dynamic-form-elements-field-wrapper{ }
+.dynamic-form-elements-text { color: #444444; height: 16px; width: 148px; }
+
+/* Survey Trigger */
+
+.trigger-text-area {
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	color: #444444;
+	font-family: inherit;
+	font-size: 10pt;
+	height: 78px;
+	padding: 4px;
+	width: 280px;
+}
+
+.trigger-text-field {
+	border: 1px solid #c9c9c9;
+	border-radius: 3px;
+	color: #444444;
+	font-size: 10pt;
+	height: 22px;
+	padding: 4px;
+	width: 280px;
+}
+
+.trigger-required {
+	color:red;
+	font-size: 10pt;
+}
+
+.trigger-label { 
+	color: #444;
+	font-size: 10pt;
+}
+
+.trigger-row {
+	
+}
+
+.trigger-td {
+	border-top: 1px solid #f1f1f1;
+	padding: 10px;
+}

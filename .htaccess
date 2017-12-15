@@ -1,0 +1,21 @@
+########### AMEMBER START #####################
+Options +FollowSymLinks
+RewriteEngine On
+
+# if cookie is set and file exists, stop rewriting and show page
+RewriteCond %{HTTP_COOKIE} amember_nr=([a-zA-Z0-9]+)
+RewriteCond /home/afonseca/public_html/amember/data/new-rewrite/%1-8 -f
+RewriteRule ^(.*)$ - [S=3]
+
+# if cookie is set but folder file does not exists, user has no access to given folder
+RewriteCond %{HTTP_COOKIE} amember_nr=([a-zA-Z0-9]+)
+RewriteCond /home/afonseca/public_html/amember/data/new-rewrite/%1-8 !-f
+RewriteRule ^(.*)$ https://therapyexamprep.com/amember/no-access/folder/id/8?url=%{REQUEST_URI}?%{QUERY_STRING}&host=%{HTTP_HOST}&ssl=%{HTTPS} [L,R]
+
+## if user is not authorized, redirect to login page
+# BrowserMatch "MSIE" force-no-vary
+RewriteCond %{QUERY_STRING} (.+)
+RewriteRule ^(.*)$ https://therapyexamprep.com/amember/protect/new-rewrite?f=8&url=%{REQUEST_URI}?%1&host=%{HTTP_HOST}&ssl=%{HTTPS} [L,R,B]
+RewriteRule ^(.*)$ https://therapyexamprep.com/amember/protect/new-rewrite?f=8&url=%{REQUEST_URI}&host=%{HTTP_HOST}&ssl=%{HTTPS} [L,R]
+########### AMEMBER FINISH ####################
+

@@ -1,0 +1,432 @@
+/* Pracitce Exam Style */
+
+html, body{height: 100%; overflow: auto;}
+/* change by MZ*/
+html{
+	margin: 0 !important;
+	padding: 0;
+}
+#rackforms-output-div-exam-form{
+	padding-right: 0;
+	padding-left: 0;
+}
+#TopHeader, #TopHeader1, #TopHeader2, #TopHeader3, #TopHeader4, #TopHeader5, #TopHeader6, #TopHeader7,
+#TopHeaderError{
+	padding-top: 10px;
+	padding-left: 10px;
+	height: inherit !important;
+}
+#HeaderView, #HeaderView1, #HeaderView2, #HeaderView3, #HeaderView4, #HeaderView5, #HeaderView6, #HeaderView7{
+	padding-left: 10px;
+	/*padding-right: 10px;*/
+}
+#fb_fld-TopHeader, #fb_fld-TopHeader1, #fb_fld-TopHeader2, #fb_fld-TopHeader3,
+#fb_fld-TopHeader4, #fb_fld-TopHeader5, #fb_fld-TopHeader6, #fb_fld-TopHeader7, #fb_fld-TopHeaderError{
+	background-color: #2b3d51 !important;
+	border-bottom: 7px solid #bec3d7;
+}
+#fb_fld-Logo, #fb_fld-Logo_1, #fb_fld-Logo_1_2, #fb_fld-Logo_1_2_3, #fb_fld-Logo_1_2_3_4,
+#fb_fld-Logo_1_2_3_4_5, #fb_fld-Logo_1_2_3_4_5_6_7, #fb_fld-Logo_1_2_3_4_5_6_7_7,
+#fb_fld-user, #fb_fld-ExamName{
+	margin-bottom: 0px !important;
+}
+#fb_fld-QuestionView, #fb_fld-QuestionView1, #fb_fld-QuestionView2, #fb_fld-QuestionView3,
+#fb_fld-QuestionView4, #fb_fld-QuestionView5, #fb_fld-QuestionView6, #fb_fld-QuestionView7{
+	padding-left: 10px;
+	padding-right: 10px;
+	width: auto !important;
+}
+#choiceText1, #choiceText2, #choiceText3, #choiceText4{
+	padding-left: 10px;
+}
+#Answer0, #Answer1, #Answer2, #Answer3{
+	margin-top: 6px;
+}
+#fb_fld-DifficultyRadio, #fb_fld-GuessedCheck {
+	background-color: #467bb9;
+	width: 100% !important;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#fb_fld-DifficultyRadio{
+	float: none !important;
+	margin-bottom: 0px !important;
+	border-bottom: 3px solid #bec3d7;
+
+}
+
+input[type=radio], input[type=checkbox]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #bdc3c7;
+    text-align: center;
+    cursor: pointer;
+}
+
+.important {
+    color: #60d4d4;
+}
+
+#QuestionView{height:auto !important;}
+.bucket{height: auto !important;}
+#fb_fld-questionText{float:none !important; margin-bottom:0 !important;}
+.highlighter-context{padding-bottom:50px !important; margin-bottom:-40px !important;}
+.eliminate{position:relative; text-decoration: line-through;}
+.rf-multiselect-item-label span::before{content:'\a0'}
+.rf-multiselect-item-label span.choiceNum::before{display:none;}
+span#choiceText1, span#choiceText2, span#choiceText3, span#choiceText4{padding-left:0;}
+
+	/* ----------- end screen styles --------------------------*/
+    
+    .ErrorMessage .body-copy{
+    	width: 100% !important;
+    	padding: 0 100px !important;
+    }
+    .ErrorMessage .body-copy h1, #rackforms-output-div div h1{
+    	font-size: 36px;
+    }
+    .ErrorMessage .body-copy p{
+    	padding: 0 40px;
+    }
+    
+    /* ===================================================================================
+                                    changes for survey screen start
+    =====================================================================================
+    */
+    
+    #fb_fld-headerExam h1{
+        font-size: 28px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #rackforms-output-div{
+        font-family: 'Open Sans' !important;
+    }
+    #rackforms-output-div div h1{
+        text-align: center;
+    }
+    
+    /* ===================================================================================
+                                    changes for survey screen end
+    =====================================================================================
+    */
+
+ /* ---- style for confirmation screen */
+#rackforms-output-div, #rackforms-output-div-error{
+	width: 100% !important;
+}
+
+/*  ================================= change by MZ* ================================== */
+
+body {
+	/* change by MZ */
+	margin: 0 !important;
+	/* change by MZ */
+
+    background-color: #316EB4;    
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 940px;
+}
+
+#rackforms-output-div-exam-form, #rackforms-output-div-page1, #rackforms-output-div-page2,
+#rackforms-output-div-page3, #rackforms-output-div-page4, #rackforms-output-div-page5,
+#rackforms-output-div-page6, #rackforms-output-div-page7, #rackforms-output-div-error
+{
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form default font and color */
+#rackforms-output-div-exam-form div, #rackforms-output-div-exam-form p,
+#rackforms-output-div-exam-form label, #rackforms-output-div-exam-form input,
+#rackforms-output-div-page1 div, #rackforms-output-div-page1 p,
+#rackforms-output-div-page1 label, #rackforms-output-div-page1 input,
+#rackforms-output-div-page2 div, #rackforms-output-div-page2 p,
+#rackforms-output-div-page2 label, #rackforms-output-div-page2 input,
+#rackforms-output-div-page3 div, #rackforms-output-div-page3 p,
+#rackforms-output-div-page3 label, #rackforms-output-div-page3 input,
+#rackforms-output-div-page4 div, #rackforms-output-div-page4 p,
+#rackforms-output-div-page4 label, #rackforms-output-div-page4 input,
+#rackforms-output-div-page5 div, #rackforms-output-div-page5 p,
+#rackforms-output-div-page5 label, #rackforms-output-div-page5 input,
+#rackforms-output-div-page6 div, #rackforms-output-div-page6 p,
+#rackforms-output-div-page6 label, #rackforms-output-div-page6 input,
+#rackforms-output-div-page7 div, #rackforms-output-div-page7 p,
+#rackforms-output-div-page7 label, #rackforms-output-div-page7 input,
+#rackforms-output-div-error div, #rackforms-output-div-error p,
+#rackforms-output-div-error label, #rackforms-output-div-error input {
+    font-family:'Open Sans';
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 400;
+    color:lightgray;
+}
+
+/* Top Header */
+#fb_fld-user p {
+    line-height: 24px;
+}
+
+#email {
+    font-size: 12px;
+}
+
+/* Question view */
+#fb_fld-QuestionView {
+    min-height: 398px;
+}
+
+/* User highlight of question text */
+.highlighted {
+    color: darkslategray;
+    background-color: #f1c40f;
+}
+#NavQuestion div{
+    float: none !important;
+    width: 33.33%;
+    padding-left: 5px;    
+    padding-right: 5px;
+    margin: auto;    
+}
+#NavQuestion1, #NavQuestion2, #NavQuestion3, #NavQuestion4, #NavQuestion5, #NavQuestion7{
+	width: 50%;
+	margin: auto;
+}
+#NavQuestion1 div, #NavQuestion2 div, #NavQuestion3 div, #NavQuestion4 div, #NavQuestion5 div, #NavQuestion7 div{
+    width: 50%;
+    padding-left: 5px;    
+    padding-right: 5px;
+    margin: auto;  
+}
+#NavQuestion6 div{
+	width: 33.33%;
+	padding-left: 5px;    
+    padding-right: 5px;
+}
+
+#fb_fld-DifficultyRadio div.ui.radio.checkbox {
+    float: left;
+    /* change by MZ */
+    padding-right: 10px;
+    /* change by MZ */
+}
+
+#QuestionMetaView {
+    float: right;
+    /*margin-right: 20px;*/
+    height: auto !important;
+}
+
+#NavQuestion input, #NavQuestion1 input, #NavQuestion2 input, #NavQuestion3 input,
+#NavQuestion4 input, #NavQuestion5 input, #NavQuestion6 input, #NavQuestion7 input{
+    width: 100%;
+    border: 1px;
+    color: #ffffff;
+    background-color: #2c81ba;    
+    line-height: 1.4;
+    border-radius: 4px;
+    padding: 10px 15px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+            transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+}
+
+input#Mark[value=Mark]
+{
+    background-color: #2c81ba;
+}
+#NavQuestion input:hover,#NavQuestion1 input:hover, #NavQuestion2 input:hover,
+#NavQuestion3 input:hover, #NavQuestion4 input:hover, #NavQuestion5 input:hover, #NavQuestion6 input:hover,
+#NavQuestion7 input:hover, input#Mark[value=Mark]:hover{
+    background-color: #3096DA;
+}
+@media (min-width: 801px){
+    #Previous:hover{
+        background-color: #3096DA !important;
+    }
+}
+
+input#Mark[value=Unmark]
+{
+    background-color: #f1c40f !important;
+    -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+            transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+
+}
+input#Mark[value=Unmark]:hover{
+    background-color: #F9D441 !important;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+@media screen and (max-width: 800px) {
+	/* ================== top header START =================== */
+	#fb_fld-ExamName{
+		display: none;
+	}
+	#fb_fld-Logo, #fb_fld-user, #fb_fld-Logo_1, #fb_fld-Logo_1_2, #fb_fld-Logo_1_2_3, #fb_fld-Logo_1_2_3_4,
+    #fb_fld-Logo_1_2_3_4_5, #fb_fld-Logo_1_2_3_4_5_6_7, #fb_fld-Logo_1_2_3_4_5_6_7_7{
+		width: 50% !important;
+	}
+	#fb_fld-Logo .section-head #logo, #fb_fld-Logo_1 .section-head #logo, #fb_fld-Logo_1_2 .section-head #logo,
+    #fb_fld-Logo_1_2_3 .section-head #logo, #fb_fld-Logo_1_2_3_4 .section-head #logo, #fb_fld-Logo_1_2_3_4_5 .section-head #logo,
+    #fb_fld-Logo_1_2_3_4_5_6_7 .section-head #logo, #fb_fld-Logo_1_2_3_4_5_6_7_7 .section-head #logo{
+		float: left;
+	}
+	#fb_fld-user .section-head{
+		padding-right: 5px !important;
+	}
+
+	#fb_fld-questionNumber, {
+		width: 100% !important;
+		float: none !important;
+		margin-bottom: 0px !important;
+	}
+	#fb_fld-sectionNumber{
+		width: 100% !important;
+		float: none !important;
+		margin-bottom: 0px !important;
+	}
+	#fb_fld-sectionNumber .section-head{
+		text-align: left !important;
+	}
+	#fb_fld-timer{
+		width: 100% !important;
+	}
+	#fb_fld-timer .section-head{
+		text-align: left !important;
+	}
+	#QuestionMetaView{
+		float: none;
+	}
+
+	/* ================== buttons START =================== */
+	#fb_fld-Previous, #fb_fld-Mark, #fb_fld-Next{
+		width: 100% !important;
+	}
+	#NavQuestion input, #NavQuestion1 input, #NavQuestion2 input, #NavQuestion3 input,
+	#NavQuestion4 input, #NavQuestion5 input, #NavQuestion6 input, #NavQuestion7 input{
+        padding: 20px 15px; 
+    }
+    #NavQuestion1, #NavQuestion2, #NavQuestion3, #NavQuestion4, #NavQuestion5, #NavQuestion7{
+        width: 100%;
+    }
+	/* ================== buttons END =================== */
+
+    .ErrorMessage .body-copy{
+    	padding:0 50px !important;
+    }
+
+}
+@media screen and (max-width: 528px) {
+	.ErrorMessage .body-copy h1,  #rackforms-output-div div h1{
+    	font-size: 30px;
+    }
+    .ErrorMessage .body-copy p{
+	    padding: 0 0px;
+	}
+}
+
+#logo {
+	background:url("https://therapyexamprep.com/products/practice-exam/resources/images/TEP-Logo.png") no-repeat center / contain;
+	height:59px;
+	display:block;
+	opacity: 0.75;
+}
+
+/* ======================
+ logo settings for ratina display devices
+ ============== */
+@media
+screen and (-webkit-min-device-pixel-ratio: 1),
+screen and (   min--moz-device-pixel-ratio: 1),
+screen and (     -o-min-device-pixel-ratio: 1/1),
+screen and (        min-device-pixel-ratio: 1),
+screen and (                min-resolution: 1dppx) { 
+	#logo {
+		background:url("https://therapyexamprep.com/products/practice-exam/resources/images/TEP-Logo.png") no-repeat center / contain;
+		height:59px;
+		display:block;
+	    opacity: 0.75;
+	}
+}
+
+@media
+screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (   min--moz-device-pixel-ratio: 2),
+screen and (     -o-min-device-pixel-ratio: 2/1),
+screen and (        min-device-pixel-ratio: 2),
+screen and (                min-resolution: 2dppx) { 
+	#logo {
+		background:url("https://therapyexamprep.com/products/practice-exam/resources/images/TEP-Logo-2x.png") no-repeat center / contain;
+		opacity: 0.75;
+		height: 59px;
+		display:block;
+		width: 98px;
+	}
+}
+@media
+screen and (-webkit-min-device-pixel-ratio: 3),
+screen and (   min--moz-device-pixel-ratio: 3),
+screen and (     -o-min-device-pixel-ratio: 3/1),
+screen and (        min-device-pixel-ratio: 3),
+screen and (                min-resolution: 3dppx) { 
+	#logo {
+		background:url("https://therapyexamprep.com/products/practice-exam/resources/images/TEP-Logo-3x.png") no-repeat center / contain;
+		opacity: 0.75;
+		height: 59px;
+		width: 98px;
+		display:block;
+	}
+}
+
+/* ======================
+end of  logo settings for ratina display devices
+ ============== */

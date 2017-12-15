@@ -1,0 +1,23 @@
+body .embed-container{margin:0;}
+body > iframe{position:absolute; z-index:-1; left:0; bottom:0;}
+
+#fb-iframe-member-practice-exams_page0{min-height:500px;}
+
+body .sweet-alert p{color:#2b3e51;}
+body .sweet-alert h2{font-weight:normal; font-size:32px; color:#2b3e51;}
+body .sweet-alert button{-webkit-appearance: none; font-family:"Open Sans", Helvetica, Arial, sans-serif; background:#60D4D4; border-radius:3px; font-weight:bold; height:45px; font-size:14px; padding:0.6em 20px; text-align:center; transition:all 250ms ease-in-out 0s; font-size:14px; min-width:128px; }
+body .sweet-alert button:hover{background:#01c9c7;}
+#video, #video-activator{display:none;}
+.embed-container {padding: 0; margin: -2% 0;}
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; width: 100%; height: 100%; }
+
+.fbx-item.fbx-item-html{width:auto !important; height:100% !important;}
+.fbx-item.fbx-item-html .am-video > div{height: 100% !important; width:100% !important;}
+.fbx-item.fbx-item-html .am-video-wrapper, .fbx-item.fbx-item-html .am-video, .fbx-item.fbx-item-html video{height:100% !important;}
+.fbx-item.fbx-item-html .embed-container{height:98% !important;}
+.am-video{max-width:none !important;}
+
+@media (max-width:800px){
+	.fbx-inner.fbx-inner-shadow{ background: #333; height: 0 !important; min-height: 0; padding-top: 56%; }
+	body .fbx-item.fbx-item-html .embed-container{height:100% !important;}
+}

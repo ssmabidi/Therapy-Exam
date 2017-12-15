@@ -1,0 +1,223 @@
+/* Table styles */
+body {
+  font-family: "Open Sans";
+  margin: auto;
+  position: relative;
+  width: 100%;
+}
+.bullet { font-size: 18px; font-weight: normal; overflow: visible;display: block}
+.bullet .marker { stroke: #2B3E51; stroke-width: 2px; }
+.bullet .tick line { stroke: #666; stroke-width: .5px; }
+.bullet .range.s0 { fill: #5cb85c; }
+.bullet .range.s1 { fill: #f0ad4e; }
+.bullet .range.s2 { fill: #f0784e; }
+.bullet .range.s3 { fill: #d9534f; }
+.bullet .measure.s0 { fill: lightyellow; stroke: steelblue }
+.bullet .measure.s1 { fill: steelblue; }
+.bullet .title { font-size: 21px; font-weight: normal}
+.bullet .subtitle { fill: #999; }
+._svg {width: 100%;}
+._svg .tick{position: relative;}
+.status{font-size: 16px;word-break: break-all;}
+.value{font-size: 20px}
+.new_ul li:before{
+	content: none !important;
+}
+.one_chart{
+	display: inline-block;
+	margin-left: 40px;
+}
+.new_ul li
+{
+	display: inline-block;
+}
+.new_ul
+{
+	display: inline-block;
+}
+.pie_chart {
+	width: 300px;
+	height:300px;
+}
+table, th, td {
+   border: 1px solid black;
+}
+
+td {
+	text-align: center;
+	
+}
+
+.time-extension {
+	font-size: 16px;
+	color: gray;
+}
+
+i.material-icons {
+	font-size: 36px;
+	vertical-align: sub;
+}
+
+.confidence_cell {
+	
+	color:rgba(0,0,0,0) !important;
+}
+
+.main table th {
+	text-align: center;
+	font-weight: normal;
+	background-color: #60d4d4;
+	border-color: #60d4d4;
+	color: white;
+}
+
+td { white-space:pre }
+._svg text { white-space:pre }
+
+text{fill:#2B3E51;}
+div > div:nth-child(1) > div > svg > g > g > g > g > text {fill:white;}
+div > div:nth-child(1) > div > svg > g:nth-child(3) > text {font-weight: normal}
+.pie_chart > div > div:nth-child(1) > div > svg > g > text {font-size: 12px}
+.pie_chart > div > div:nth-child(1) > div > svg > g:nth-child(3) > text {font-size: 19px}
+svg > g > g > text { font-style: normal; }
+
+/* Test score ranges */
+.red{
+	background-color: #d9534f;
+}
+.yellow{
+	background-color: #f0ad4e;
+}
+.orange{
+	background-color: #f0784e;
+}
+.green{
+	background-color: #5cb85c;
+}
+
+.low-score {
+	background-color: #f9f2f4;
+	color: #c7254e;
+}
+
+/* Confidence chart key */
+.low_confidence_key {
+	font-size: 24px;
+	color: #d9534f;	
+}
+
+.average_confidence_key {
+	font-size: 24px;
+	color: #f0ad4e;	
+}
+
+.high_confidence_key {
+	font-size: 24px;
+	color: #5cb85c;	
+}
+
+.pass_key {
+	font-size: 24px;
+	color: #54ab54;	
+}
+
+.fail_key {
+	font-size: 24px;
+	color: #ce4d4a;	
+}
+
+
+/* Confidence levels */
+.confidence-key {
+	float:left;
+	width: 25%;
+	overflow:hidden;	
+	display:none; /* don't show by default */
+}
+
+.performance-key {
+	float:left;
+	width:25%;
+	overflow:hidden;
+	display:none; /* don't show by default */
+}
+
+.clear-float {
+	clear: left; 
+}
+
+/* Timing */
+.timing-key {
+	display:none; /* don't show by default */
+}
+
+.low_pass{
+	background: linear-gradient(to right bottom, #d9534f 50%, #54ab54 50%);
+}
+.average_pass{
+	background: linear-gradient(to right bottom, #f0ad4e 50%, #54ab54 50%);
+}
+.high_pass{
+	background: linear-gradient(to right bottom, #5cb85c 50%, #54ab54 50%);
+}
+
+.low_fail{
+	background: linear-gradient(to right bottom, #d9534f 50%, #ce4d4a 50%);
+}
+.average_fail{
+	background: linear-gradient(to right bottom, #f0ad4e 50%, #ce4d4a 50%);
+}
+.high_fail{
+	background: linear-gradient(to right bottom, #5cb85c 50%, #ce4d4a 50%);
+}
+
+/* Survey */
+.survey-heading {
+	width: 50%;
+	border-bottom: lightgray;
+	border-bottom-style: double;
+}
+
+.new_ul li:nth-child(1)
+{
+	margin-right: 100px;
+}
+
+/* Media queries aligning with Footable breakpoint */
+@media screen and (min-width:1044px) {
+	/* Only show timing key when footables are not collapsed */
+	.timing-key {
+		display: inline;	
+	}
+
+	/* Only show keys when footables are not collapsed */
+	.confidence-key {
+		display: inline;
+	}
+
+	.performance-key {
+		display: inline;
+	}
+}
+
+@media (max-width: 600px){
+	.value{font-size: 15px;}
+	.status{font-size: 12px}
+	
+}
+
+@media (max-width: 475px){
+	.value{font-size: 13px;}
+	.status{font-size: 10px}
+}
+
+@media (max-width: 475px){
+	.value{font-size: 13px;}
+	.status{font-size: 10px;}
+}
+
+@media (max-width: 400px){
+	.value{font-size: 11px;}
+	.status{font-size: 8px}
+
+}
